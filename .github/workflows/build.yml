@@ -21,6 +21,6 @@ jobs:
                   npm install
                   npm run build
                   npm link
-                  angular-build-info
+                  build-info
               env:
                   CI: true

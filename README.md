@@ -90,6 +90,7 @@ This is what the previous code will output in the browser console once you open 
 ## Authors
 
 -   **Juri Adams** - _Initial Work_ - [@4dams](https://github.com/4dams)
+-   **Bekker Imre** - _Fork_ - [@tetkosimi](https://github.com/tetkosimi)
 
 ## License
 
