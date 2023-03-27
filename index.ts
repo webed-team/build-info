@@ -4,7 +4,6 @@ import signale from "signale";
 import { Build } from "./src/interfaces/build.interface";
 
 import version from "./src/modules/version";
-import message from "./src/modules/message";
 import gitUser from "./src/modules/git/user";
 import gitBranch from "./src/modules/git/branch";
 import gitCommit from "./src/modules/git/commit";
