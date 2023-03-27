@@ -1,6 +1,6 @@
 {
     "name": "@webed/build-info",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "🛠 A CLI to generate an easily importable `build.ts` file containing various details about the application build",
     "main": "index.js",
     "bin": {
