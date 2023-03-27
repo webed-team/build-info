@@ -6,10 +6,10 @@ import signale from "signale";
 /**
  * Writes a given Build objects to a file
  * @param content File contents to write to `build.ts` file
- * @param path Optional `path` parameter, defaults to ``${process.cwd()}/src/build.ts``
+ * @param path Optional `path` parameter, defaults to ``${process.cwd()}/build.ts``
  */
 const write = async (content: Build, path?: string): Promise<void> => {
-    const writePath = path || `${process.cwd()}/src/build.ts`;
+    const writePath = path ? `${process.cwd()}${path}` : `${process.cwd()}/build.ts`;
 
     try {
         await fs.writeFile(
