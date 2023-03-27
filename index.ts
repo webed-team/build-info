@@ -23,16 +23,17 @@ import write from "./src/lib/write";
 
     build.version = await version();
     build.timestamp = new Date().toString();
-    build.message =
-        args.message || (args.message === "" ? await message() : null);
-    build.git = args.noGit
-        ? null
-        : {
-              user: await gitUser(args.verbose),
-              branch: await gitBranch(),
-              hash: (await gitCommit())?.substr(0, 6),
-              fullHash: await gitCommit(),
-          };
+
+    if(args.message) build.message = args.message;
+
+    if(!args.noGit) {
+        build.git = {
+            user: await gitUser(args.verbose),
+            branch: await gitBranch(),
+            hash: (await gitCommit())?.substr(0, 6),
+            fullHash: await gitCommit(),
+        };
+    }
 
     // Write Build information to file
     await write(build, args.path);
