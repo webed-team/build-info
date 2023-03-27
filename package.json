@@ -1,6 +1,6 @@
 {
-    "name": "angular-build-info",
-    "version": "2.0.1",
+    "name": "@webed/build-info",
+    "version": "1.0.0",
     "description": "🛠 A CLI to generate an easily importable `build.ts` file containing various details about the application build",
     "main": "index.js",
     "bin": {
@@ -14,7 +14,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/inexio/angular-build-info.git"
+        "url": "git+https://github.com/webed-team/build-info.git"
     },
     "keywords": [
         "angular",
@@ -24,12 +24,12 @@
         "cli",
         "information"
     ],
-    "author": "Juri Adams <juri@adams.sh> (https://adams.sh)",
+    "author": "Bekker Imre <bekker.imre@webed.hu>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/inexio/angular-build-info/issues"
+        "url": "https://github.com/webed-team/build-info/issues"
     },
-    "homepage": "https://github.com/inexio/angular-build-info#readme",
+    "homepage": "https://github.com/webed-team/build-info#readme",
     "dependencies": {
         "prompts": "^2.3.2",
         "signale": "^1.4.0",

@@ -15,6 +15,11 @@ const args = yargs(process.argv)
         type: "boolean",
         description: "Show detailed logs",
     })
+    .option("path", {
+        alias: "p",
+        type: "string",
+        description: "Specify path",
+    })
     .option("message", {
         alias: "m",
         type: "string",
