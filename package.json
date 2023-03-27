@@ -17,8 +17,6 @@
         "url": "git+https://github.com/webed-team/build-info.git"
     },
     "keywords": [
-        "angular",
-        "angular2",
         "build-info",
         "build",
         "cli",
